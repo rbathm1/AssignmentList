@@ -7,7 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= nav_bar brand: "Assignment List", responsive: true do %>
+    <%= menu_group do %>
+        <%= menu_item "Home", root_path %>
+        <%= menu_item "About", "about" %>
+    <% end %>
+<% end %>
 <%= yield %>
 
 </body>
