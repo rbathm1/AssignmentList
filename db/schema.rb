@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160608233534) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "assignments", force: :cascade do |t|
     t.string   "name"
     t.date     "startDate"
